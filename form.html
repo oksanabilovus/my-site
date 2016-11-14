@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+   <link rel="shortcut icon" href="foto/fav.png" type="image/png">
+   <link rel="stylesheet" href="lie.css" type="text/css">
+</head>
+<body>
+  <p>Розкажіть про себе:</p>
+      <div id="Contact-form">
+    <form method="POST" action="https://formspree.io/o.top@ukr.net">
+      <fieldset class="osob">
+          <legend>Особиста інформація</legend>
+          <p>Введіть своє повне прізвище імя по-батькові.</p>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="ПІБ" required/>
+          <p>Вкажіть свою стать</p>
+          <label><input type="radio" name="gender" value="man">Man</label>
+          <label><input type="radio" name="gender" value="woman">Woman</label>
+          <p>Введіть свою дату народження.</p>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required><br><br>
+      </fieldset>
+      <fieldset class="zag">
+        <legend>Загальні дані</legend>
+        <p>Виберіть країну в якій ви проживаєте</p>
+        <label>Country:</label>
+        <input list="countries">
+        <datalist id="countries">
+          <option>Austria</option>
+          <option>France</option>
+          <option>Deutschland</option>
+          <option>Italy</option>
+          <option>Czech Republic</option>
+          <option>Poland</option>
+          <option>Ukraine</option>
+        </datalist><br><br>
+        <p>Вкажіть сою професію.</p>
+        <label for="job">Job:</label>
+        <p><input type="text" name="job" id="job"></p>
+        <p>Музика, яку ви любите.</p>
+        <label for="music">Music:</label>
+        <p><input type="text" name="music" id="music"></p>
+        <p>Вкажіть вид подорожі</p>
+        <p><label><input type="checkbox" name="way" value="Business-trip">Business trip</label>
+        <label><input type="checkbox" name="way" value="Holidays">Holidays</label></p>
+      </fieldset>
+      <fieldset>
+          <p>Вкажіть Вашу електронну адресу</p>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+      </fieldset>
+      <fieldset>
+        <p>Ваші побажання щодо сайту</p>
+        <label for="comment">Comment:</label> 
+        <textarea id="comment" required></textarea> 
+      </fieldset>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        <a href="index.html"><input type="button" value="HOME"></a>
+    </form>
+  </div>
+</body>
+</html>
