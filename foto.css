@@ -1,0 +1,266 @@
+* {
+    margin: 0 auto;
+}
+body {
+    max-width: 1200px;
+    background: #c89d67;
+    background-size: 100%;
+}
+header, footer, section {
+    display: block;
+}
+
+h1 {
+     color: #DC6658;
+     font-family: 'Shrikhand', serif;
+     font-size: 38px;
+     text-align: center;
+     text-shadow: 5px 5px 15px black;
+}
+section {
+    margin: 30px;
+}
+#logo {
+     display: flex;
+     justify-content: flex-start;
+ }
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DC6658;
+    opacity: 0.7; 
+    filter: alpha(Opacity=70);
+}
+ul.topnav li {
+  float: left;
+  font-family: 'Patua+One', cursive;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 27px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+section {
+    height: 600px;
+}
+footer {
+    height: 100px;
+}
+#carousel .item {
+  margin: 3px;
+}
+#carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+img .iconsocserv {
+    width: 32px;
+    height: 32px;
+}
+/*.images, .carousel-labels {
+	margin: 20;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.image {
+	display: block;
+	float: left;
+}
+
+.carousel-wrapper {
+	width: 100%;
+	position: relative;
+	padding-bottom: 30%;
+	background-color: #eee;
+	overflow: hidden;
+}
+.images {
+	width: 300%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+	-o-transition: left .5s ease-out;
+	-ms-transition: left .5s ease-out;
+	-moz-transition: left .5s ease-out;
+	-webkit-transition: left .5s ease-out;
+}
+.image {
+	width: 33,3333333%;
+	height: 100%;
+	color: white;
+}
+.carousel-labels {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	display: inline-block;
+}
+.carousel-label label {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: white;
+	display: block;
+	cursor: pointer;
+}
+
+#slide1:checked ~ .images {
+	left: 0;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+	background-color: black;
+}
+#slide2:checked ~ .images {
+	left: -100%;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+	background-color: black;
+}
+#slide3:checked ~ .images {
+	left: -200%;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+	background-color: black;
+}
+#slide4:checked ~ .images {
+	left: -300%;
+}
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
+	background-color: black;
+}
+#slide5:checked ~ .images {
+	left: -400%;
+}
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label {
+	background-color: black;
+}
+#slide6:checked ~ .images {
+	left: -500%;
+}
+#slide6:checked ~ .carousel-labels .carousel-label:nth-child(6) label {
+	background-color: black;
+}
+#slide7:checked ~ .images {
+	left: -600%;
+}
+#slide7:checked ~ .carousel-labels .carousel-label:nth-child(7) label {
+	background-color: black;
+}*/
+/*.carousel {
+  position: relative;
+  width: 698px;
+  padding: 10px 10px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #c89d67;
+}
+
+.carousel img {
+  width: 493px;
+  height: 450px;
+  display: block;
+  border-radius: 15px;
+  border: solid #DC6658;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 498px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 460px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}*/
