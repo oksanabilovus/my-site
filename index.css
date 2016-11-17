@@ -3,7 +3,7 @@
 }
 body {
     max-width: 1200px;
-    background: #c89d67 url( foto/fon.jpg ) no-repeat;
+    background: #c89d67 url( image/fon.jpg ) no-repeat;
     background-size: 100%;
 }
 header, footer, section {
@@ -77,4 +77,10 @@ section {
 }
 footer {
     height: 100px;
+}
+.me {
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid gold;
 }

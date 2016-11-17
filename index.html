@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Oksana</title>
-    <link rel="shortcut icon" href="foto/fav.png" type="image/png">
+    <link rel="shortcut icon" href="image/fav.png" type="image/png">
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="stylesheet" media="(min-width: 451px)" href="index.css" type="text/css" />
     <link rel="stylesheet" media="(max-width: 450px)" href="index.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Shrikhand|Patua+One">
+    <link rel="stylesheet" href="css/animate.css">
+    
 </head>
 <body>
     <nav>
         <ul class="topnav" id="myTopnav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="foto.html">MY FOTOS</a></li>
+            <li class="animated wobble" ><a href="index.html">HOME</a></li>
+            <li class="animated wobble"><a href="about.html">ABOUT ME</a></li>
+            <li class="animated wobble"><a href="foto.html">MY FOTOS</a></li>
             <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </ul>
     </nav>
      <header>
-        <h1>Hello!<br> This is Oksana's personal site!</h1>
+        <h1 class="animated fadeInDown">Hello!<br> This is Oksana's personal site!</h1>
     </header>
     <section>
+        
+        <div class="wow animated slideInRight" data-wow-duration="2s" data-wow-iteration="1" data-wow-delay="1s">
+           <img class="me" src="image/me.jpg" alt="me"/>
+        </div>
         
     </section><hr>
     <footer>
@@ -29,10 +35,16 @@
         <a href="form.html"><input type="button" value="Заповнити"></a>
       </p>
        <a href="https://www.facebook.com/bilovus.oksana.p">
-       <img class="iconsocserv" src="foto/fb.ico" alt="facebook"></a>
+       <img class="iconsocserv" src="image/fb.ico" alt="facebook"></a>
        <a href="https://www.instagram.com/oksanabilovus">
-       <img class="iconsocserv" src="foto/inst.png" alt="instagram"></a>
+       <img class="iconsocserv" src="image/inst.png" alt="instagram"></a>
     </footer>
+    
+    <script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>

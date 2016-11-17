@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Про мене</title>
-    <link rel="shortcut icon" href="foto/fav.png" type="image/png">
-    <link rel="stylesheet" href="css/about.css" type="text/css">
-    <link rel="stylesheet" media="(min-width: 451px)" href="css/about.css" type="text/css" />
-    <link rel="stylesheet" media="(max-width: 450px)" href="css/about.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/fav.png" type="image/png">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    <link rel="stylesheet" media="(min-width: 451px)" href="about.css" type="text/css" />
+    <link rel="stylesheet" media="(max-width: 450px)" href="about.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Tangerine|Shrikhand|Patua+One" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/animate.css">
+    </head>
 <body>
   <div id="container"><header>
-    <div id="logo"><a href="index.html"><img src="foto/logo.png" alt="flover" height="150" width="150"/></a>
+    <div id="logo"><a href="index.html"><img src="image/logo.png" alt="flover" height="150" width="150"/></a>
         <h1 class="hello">Hello!<br> This is Oksana's personal site!</h1>
     </div>
   </header>
   <nav>
         <ul class="topnav" id="myTopnav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT ME</a></li>
-            <li><a href="foto.html">MY FOTOS</a></li>
+            <li class="animated wobble"><a href="index.html">HOME</a></li>
+            <li class="animated wobble"><a href="about.html">ABOUT ME</a></li>
+            <li class="animated wobble"><a href="foto.html">MY FOTOS</a></li>
             <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </ul>
     </nav>
@@ -28,32 +31,62 @@
       <h2>Доброго дня! Мене звати Оксана Біловус. </h2>
       <p>Ласкаво прошу на мій персональний сайт. Дещо про себе. Народилася і проживаю в м.Жовква Львівської області. 
       Працюю в галузі будівництва. Місто де я народилася - історичне. Ходять легенди, 
-      що тут своє дитинство провів сам Богдан Хмельницький.<a target="_blank" href="foto/zhov.jpg">
-    <img class="old" src="foto/zhov.jpg" alt="zhovkva old" width="300" height="200" ><a target="_blank" href="foto/zhovplan.jpg">
-    <img class="old" src="foto/zhovplan.jpg" alt="zhovkva plan old" width="300" height="200" ></a> Щоб краще ознайомитись з містом,
-    зайдіть на <a href="http://www.zhovkva.info" target="_blank">сайт</a>.<br>
+      що тут своє дитинство провів сам Богдан Хмельницький.<a target="_blank" href="image/zhov.jpg">
+    <img class="img-thumbnail" src="image/zhov.jpg" alt="zhovkva old" width="300" height="200" ></a>
+    <a target="_blank" href="image/zhovplan.jpg"><img class="img-thumbnail" src="image/zhovplan.jpg" alt="zhovkva plan old" width="300" height="200" ></a>
+    Щоб краще ознайомитись з містом, зайдіть на <a href="http://www.zhovkva.info" target="_blank">сайт</a>.<br>
     
       </p>
     </article>
-    <sidebar>
-      <h2 id="music">My favorite films and music:</h2>
-    </sidebar>
+    <article>
+      <h2 id="music">My favorite video:</h2>
+      <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Tj75Arhq5ho" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="embed-responsive embed-responsive-16by9"> 
+                  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/iy4mXZN1Zzk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/csTZ2GKa99w" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+               <div class="embed-responsive embed-responsive-16by9">
+                 <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/kKnV8iLMC1E" frameborder="0" allowfullscreen></iframe>
+               </div>
+            </div>
+        </div>
+      </main>
+    </article>
   </section>
   <footer>
     <p>Розкажіть про себе:
       <a href="form.html"><input type="button" value="Submit"></a>
     </p>
      <a href="https://www.facebook.com/bilovus.oksana.p">
-       <img class="iconsocserv" src="foto/fb.ico" alt="facebook"></a>
+       <img class="iconsocserv" src="image/fb.ico" alt="facebook"></a>
      <a href="https://www.instagram.com/oksanabilovus">
-       <img class="iconsocserv" src="foto/inst.png" alt="instagram" type="image/png"></a>
+       <img class="iconsocserv" src="image/inst.png" alt="instagram" type="image/png"></a>
   </footer>
-  <div class="clear"></div>
-  </div> 
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  
+  
+  <script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
-</body>
+  </body>
 </html>

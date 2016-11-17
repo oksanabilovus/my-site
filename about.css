@@ -81,14 +81,13 @@ ul.topnav li.icon {
 }
 article {
     float: left;
-    width: 60%;
+    width: 100%;
 }
 sidebar {
-     margin-left: 60%;
      padding: 20px;
 }
 
-.old {
+.img-thumbnail {
     float: right; 
     margin: 7px 0 7px 7px; 
     border: 2px solid #ff0000;
@@ -96,3 +95,9 @@ sidebar {
 .iconsocserv {
     width: 32px;
 }
+.embed-responsive-item {
+    max-width: 360px;
+    max-height: auto;
+    margin: 20px;
+}
+
