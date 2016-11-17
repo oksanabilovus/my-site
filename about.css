@@ -19,6 +19,12 @@ h1 {
      text-align: center;
      text-shadow: 5px 5px 15px black;
 }
+h2 { 
+    font-family: 'Tangerine', cursive;
+     font-size: 28px;
+     text-align: center;
+     text-shadow: 5px 5px 15px black;
+}
 #logo {
      display: flex;
      justify-content: flex-start;
