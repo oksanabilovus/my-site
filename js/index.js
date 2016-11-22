@@ -21,6 +21,8 @@ function animate(elem){
     }, 1000);
 }
  
+ 
+ 
 $(".animated").click(function() {
     animate($(this));
 });
